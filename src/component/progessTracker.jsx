@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProgressTracker({ tasks }) {
+function progressTracker({ tasks }) {
   const completedTasks = tasks.filter((task) => task.completed).length;
   const totalTasks = tasks.length;
   const progress = totalTasks === 0 ? 0 : (completedTasks / totalTasks) * 100;
@@ -20,4 +20,4 @@ function ProgressTracker({ tasks }) {
   );
 }
 
-export default ProgressTracker;
+export default progressTracker;
